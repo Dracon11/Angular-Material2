@@ -1,0 +1,7 @@
+<h3>Top Heroes</h3>
+<md-card class="dashboard-card" *ngFor="let hero of heroes" [routerLink]="['/detail' , hero.id]"
+class="col-1-4">
+  <h4>{{ hero.name }}  '🐼' </h4>
+</md-card>
+<app-hero-search></app-hero-search>
+

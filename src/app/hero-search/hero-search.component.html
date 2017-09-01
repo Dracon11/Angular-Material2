@@ -1,0 +1,10 @@
+  <h4>Hero Search</h4>
+  <md-input-container>
+    <input  mdInput #searchBox placeholder="Search for hero name"
+    (keyup)="search(searchBox.value)" >
+  </md-input-container>
+  <md-nav-list>
+    <a md-list-item *ngFor="let hero of heroes | async" (click)="goToDetail(hero)" >
+      {{hero.name}}
+  </a>
+  </md-nav-list>
