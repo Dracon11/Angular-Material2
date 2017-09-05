@@ -8,11 +8,12 @@
     <button md-button (click)="start.close()">CLOSE</button>
   </md-sidenav>
   <md-toolbar color="primary">
-    <button md-icon-button (click)="start.open()">
-      <md-icon>menu</md-icon>
+    <button md-icon-button  (click)="start.open()">
+      <span><md-icon>menu</md-icon></span>
     </button>
     {{ title }}
   </md-toolbar>
+
   <div class="main-content">
     <router-outlet></router-outlet>
   </div>
